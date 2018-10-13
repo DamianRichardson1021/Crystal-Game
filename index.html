@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="style.css">
-            <script src="app.js"></script>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Crystal Collector </title>
+	<meta charset="UTF-8">
+	<title>Collecting Crystals </title>
+
+	<!--Added link to Reset Style-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Added link to CSS Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
-      <h2>Crystal Collector! </h2>
-      <div id="score-container">
-            <p id="score"> </p>
-      </div>
-      <div id="wins-container">
-            <p id="wins"> </p>
-            <p id="losses"> </p>
-      </div>
-      <div id="crystals"> </div>
-      <div>
-            <p id="current-score"></p>
+	
+<div class="jumbotron">
+    <h1 class="text-center">Digging for Crystals </h1>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+	            	<h3 class="panel-title">How to Play!</h3>
+	          	</div>
+	          	<div class="panel-body">
+					<p>
+						The game will start with a random number 
+					</p>
+					<p>
+						There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+					</p>
+					<p>
+						To win the game you will match your with a random number, you lose the game if your total score goes above the random number.
+					</p>
+					<p>
+						The number of each crystal is hidden from you until you click on it.
+					</p>
+					<p>
+						Each time when the game starts, the game randomly change the value of each crystal .
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-4 target-number">
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4 win-lose-counter">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 crystal-images">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 total-score">
+					<p>
+						Your score:
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 score-number">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
 
 
-
-      </div>
-
-
-
+	<!-- Added link to Javascript-->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
-
 </html>
