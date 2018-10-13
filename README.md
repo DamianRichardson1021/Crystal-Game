@@ -1,4 +1,4 @@
-Crystal Collector is a web application that allows users to play a game where they gain points by clicking different crystals.  The goal is to match the presented score exactly without going over.  All aspects of this application were done by Zachary Saltzman.
+Crystal Collector is a web application that allows users to play a game where they gain points by clicking different crystals.  The object is to match the presented score exactly without going over.  
 
 Technologies Used: HTML, CSS, Javascript, Bootstrap, jQuery
 
